@@ -99,7 +99,7 @@ Here is a Mermaid flowchart visualizing the perception-action loop:
 ```mermaid
 graph TD
     A[Environment] --> B(Sensing)
-    B --> C{Processing and Cognition}
+    B --> CProcessing and Cognition
     C --> D(Acting)
     D --> E[Physical Change in Environment]
     E --> A
@@ -110,11 +110,11 @@ graph TD
 
 *   **A[Environment]**: Represents the physical world surrounding the embodied agent. This is where all interactions occur and changes manifest.
 *   **B(Sensing)**: The agent gathers data from the environment using its various sensors (cameras, tactile sensors, IMUs, etc.). This is the input stage of the loop.
-*   **C{Processing and Cognition}**: The "brain" of the agent. This stage interprets the raw sensory data, builds a world model, makes decisions based on goals and current state, and plans actions. It also incorporates learning and maintains internal states.
+*   **CProcessing and Cognition**: The "brain" of the agent. This stage interprets the raw sensory data, builds a world model, makes decisions based on goals and current state, and plans actions. It also incorporates learning and maintains internal states.
 *   **D(Acting)**: The agent executes its planned actions using actuators (motors, grippers, etc.). These actions translate cognitive decisions into physical movements.
 *   **E[Physical Change in Environment]**: The result of the agent's actions. These changes can be subtle (e.g., slight change in robot's position) or significant (e.g., moving an object, navigating to a new location).
 *   The arrow from **E** back to **A** and then **B** signifies that these physical changes in the environment become the new context for the next round of sensing, thus closing the loop and making it continuous.
-*   The self-loop on **C{Processing and Cognition}** indicates that internal states, learning, and memory continuously influence and are influenced by cognitive processes within the loop.
+*   The self-loop on **CProcessing and Cognition** indicates that internal states, learning, and memory continuously influence and are influenced by cognitive processes within the loop.
 
 This flowchart clearly illustrates the cyclical and interdependent nature of perception and action in embodied intelligent systems.
 
