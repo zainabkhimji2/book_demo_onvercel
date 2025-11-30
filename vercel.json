@@ -1,14 +1,23 @@
 {
   "builds": [
     {
+      "src": "physical-ai-textbook/package.json",
+      "use": "@vercel/static-build",
+      "config": { "distDir": "build" }
+    },
+    {
       "src": "backend/main.py",
       "use": "@vercel/python"
     }
   ],
   "routes": [
     {
-      "src": "^/api/(.*)$",
-      "dest": "api/main.py"
+      "src": "/backend/(.*)",
+      "dest": "backend/main.py"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "physical-ai-textbook/$1"
     }
   ]
 }
