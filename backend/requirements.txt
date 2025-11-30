@@ -8,5 +8,9 @@ pydantic==2.5.0
 httpx==0.25.1
 markdown==3.5.1
 beautifulsoup4==4.12.2
+<<<<<<< HEAD
+=======
+tiktoken==0.6.3
+>>>>>>> 6c1a3f2db2135e063bb7bc63876ac74f8ac5ce04
 python-multipart==0.0.6
 tiktoken==0.6.3 
